@@ -1,14 +1,14 @@
-#DingTalk Auth
+# DingTalk Auth
 
 To get Dingtalk config build on KOA2 Server
 
-##Installation
+## Installation
 
 ```
 npm install i
 ```
 
-##Quick Start
+## Quick Start
 
 1. set up ./src/config/env.js
 
@@ -34,7 +34,9 @@ http://localhost:3000/dd/config
 ## Ref
 
 Dingtalk API: https://open-doc.dingtalk.com/
+
 KOA1 Version: https://github.com/injekt/jsapi-demo
+
 ALI SDK: https://github.com/ali-sdk/node-dingtalk
 
 
