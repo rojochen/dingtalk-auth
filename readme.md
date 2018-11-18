@@ -26,7 +26,7 @@ module.exports = {
 npm run start
 ```
 
-3.  get the config
+3.  post the config
 
 ```
 http://localhost:3000/dd/config
