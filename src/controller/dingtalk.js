@@ -6,13 +6,13 @@ const  crypto = require('crypto');
 const OAPI_HOST = 'https://oapi.dingtalk.com';
 const corpId = require('../config/env').corpId;
 const corpsecret = require('../config/env').corpsecret;
-
+const env =  require('../config/env');
 
 async function getConfig(ctx) {
     let nonceStr = 'abcdefg';
     let timeStamp = new Date().getTime();
     let signedUrl = decodeURIComponent(ctx.request.href);
-    let accessTokenResponse = await invoke('/gettoken', {corpid: corpId, corpsecret: corpsecret});
+    let accessTokenResponse = await invoke('/gettoken', env);
     let accessToken = accessTokenResponse['access_token'];
     let ticketResponse = await invoke('/get_jsapi_ticket', {type: 'jsapi', access_token: accessToken});
     let ticket = ticketResponse['ticket'];
